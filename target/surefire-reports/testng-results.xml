@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="3" failed="2" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-10-26T23:06:54 EEST" name="Cucumber tests" finished-at="2022-10-26T23:08:10 EEST" duration-ms="75935">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.example.runner.CucumberTest@702657cc]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2022-10-26T23:06:54 EEST" name="All Tests" finished-at="2022-10-26T23:08:10 EEST" duration-ms="75935">
+      <class name="org.example.runner.CucumberTest">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:org.example.runner.CucumberTest@702657cc]" started-at="2022-10-26T23:06:54 EEST" name="setUpClass" finished-at="2022-10-26T23:06:55 EEST" duration-ms="542" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@5fcacc0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.example.runner.CucumberTest@702657cc]" started-at="2022-10-26T23:06:55 EEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-26T23:07:10 EEST" duration-ms="14951" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Docs sections should contains appropriate columns"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["As a user I want to get ability to user Docs pages"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.example.runner.CucumberTest@702657cc]" started-at="2022-10-26T23:07:10 EEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-26T23:07:20 EEST" duration-ms="10303" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Docs sections should contains appropriate columns"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["As a user I want to get ability to use menu sections"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.example.runner.CucumberTest@702657cc]" started-at="2022-10-26T23:07:20 EEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-26T23:07:39 EEST" duration-ms="19279" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Docs sections should contains appropriate columns"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["As a user I want to get ability to use menu sections"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Page with title '{}' is not displayed]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Page with title '{}' is not displayed
+at org.example.steps.MenuSteps.verifyPageTitlePresence(MenuSteps.java:33)
+at ✽.page with title "API Docs" is displayed(classpath:features/MenuSections.feature:9)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.example.runner.CucumberTest@702657cc]" started-at="2022-10-26T23:07:39 EEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-26T23:07:49 EEST" duration-ms="10391" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Docs sections should contains appropriate columns"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["As a user I want to get ability to use menu sections"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.example.runner.CucumberTest@702657cc]" started-at="2022-10-26T23:07:49 EEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-26T23:08:10 EEST" duration-ms="20287" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Docs sections should contains appropriate columns"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["As a user I want to get ability to use menu sections"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Page with title '{}' is not displayed]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Page with title '{}' is not displayed
+at org.example.steps.MenuSteps.verifyPageTitlePresence(MenuSteps.java:33)
+at ✽.page with title "3rd Party Tools" is displayed(classpath:features/MenuSections.feature:9)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:org.example.runner.CucumberTest@702657cc]" started-at="2022-10-26T23:08:10 EEST" name="tearDownClass" finished-at="2022-10-26T23:08:10 EEST" duration-ms="140" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- org.example.runner.CucumberTest -->
+    </test> <!-- All Tests -->
+  </suite> <!-- Cucumber tests -->
+</testng-results>

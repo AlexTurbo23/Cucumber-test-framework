@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 76.843 s <<< FAILURE! - in TestSuite
+runScenario(org.example.runner.CucumberTest)  Time elapsed: 19.278 s  <<< FAILURE!
+java.lang.AssertionError: Page with title '{}' is not displayed
+
+runScenario(org.example.runner.CucumberTest)  Time elapsed: 20.287 s  <<< FAILURE!
+java.lang.AssertionError: Page with title '{}' is not displayed
+

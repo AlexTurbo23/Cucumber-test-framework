@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="2" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="5" time="75.345">
+    <testcase classname="As a user I want to get ability to user Docs pages" name="Docs sections should contains appropriate columns" time="14.844">
+        <system-out><![CDATA[Given the user opens Cucumber website.......................................passed
+When the user clicks on the "Docs" section..................................passed
+And the user clicks on the "Installation" item..............................passed
+Then there are 10 items in the left-side menu...............................passed
+And left-side menu contains the following links.............................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="As a user I want to get ability to use menu sections" name="Docs sections should contains appropriate columns" time="10.303">
+        <system-out><![CDATA[Given the user opens Cucumber website.......................................passed
+When the user clicks on the "Docs" section..................................passed
+And the user clicks on the "Installation" item..............................passed
+Then page with title "Installation" is displayed............................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="As a user I want to get ability to use menu sections" name="Docs sections should contains appropriate columns 2" time="19.271">
+        <failure message="Page with title '{}' is not displayed" type="java.lang.AssertionError"><![CDATA[Given the user opens Cucumber website.......................................passed
+When the user clicks on the "Docs" section..................................passed
+And the user clicks on the "API Docs" item..................................passed
+Then page with title "API Docs" is displayed................................failed
+
+StackTrace:
+java.lang.AssertionError: Page with title '{}' is not displayed
+	at org.example.steps.MenuSteps.verifyPageTitlePresence(MenuSteps.java:33)
+	at ✽.page with title "API Docs" is displayed(classpath:features/MenuSections.feature:9)
+]]></failure>
+    </testcase>
+    <testcase classname="As a user I want to get ability to use menu sections" name="Docs sections should contains appropriate columns 3" time="10.39">
+        <system-out><![CDATA[Given the user opens Cucumber website.......................................passed
+When the user clicks on the "Docs" section..................................passed
+And the user clicks on the "Gherkin Syntax" item............................passed
+Then page with title "Gherkin Syntax" is displayed..........................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="As a user I want to get ability to use menu sections" name="Docs sections should contains appropriate columns 4" time="20.287">
+        <failure message="Page with title '{}' is not displayed" type="java.lang.AssertionError"><![CDATA[Given the user opens Cucumber website.......................................passed
+When the user clicks on the "Docs" section..................................passed
+And the user clicks on the "3rd Party Tools" item...........................passed
+Then page with title "3rd Party Tools" is displayed.........................failed
+
+StackTrace:
+java.lang.AssertionError: Page with title '{}' is not displayed
+	at org.example.steps.MenuSteps.verifyPageTitlePresence(MenuSteps.java:33)
+	at ✽.page with title "3rd Party Tools" is displayed(classpath:features/MenuSections.feature:9)
+]]></failure>
+    </testcase>
+</testsuite>
